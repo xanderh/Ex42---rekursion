@@ -26,5 +26,16 @@ namespace UnitTestProject1
             Assert.AreEqual(5, Program.Fibonacci(5));
             Assert.AreEqual(8, Program.Fibonacci(6));
         }
+
+        [TestMethod]
+        public void TestFibonacciFast()
+        {
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => Program.FibonacciFast(-1));
+            Assert.AreEqual(0UL, Program.FibonacciFast(0));
+            Assert.AreEqual(1UL, Program.FibonacciFast(1));
+            Assert.AreEqual(2UL, Program.FibonacciFast(3));
+            Assert.AreEqual(5UL, Program.FibonacciFast(5));
+            Assert.AreEqual(8UL, Program.FibonacciFast(6));
+        }
     }
 }

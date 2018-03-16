@@ -15,8 +15,10 @@ namespace Ex42___rekursion
         {
             int factorial = 3;
             Console.WriteLine("Factorial of " + factorial + " is " + Factorial(factorial));
-            int fibonacci = 5;
+            long fibonacci = 40;
             Console.WriteLine("Fibonacci number of " + fibonacci + " is " + Fibonacci(fibonacci));
+            long fibonacciFast = 1000000000;
+            Console.WriteLine("Fibonacci number of " + fibonacciFast + " is " + FibonacciFast(fibonacciFast));
 
             Console.ReadKey();
         }
@@ -47,7 +49,7 @@ namespace Ex42___rekursion
         /// </summary>
         /// <param name="value">Throws an ArgumentOutOfRangeException if value is negative</param>
         /// <returns>Integer corresponding to f(value)</returns>
-        public static int Fibonacci(int value)
+        public static int Fibonacci(long value)
         {
             if (value < 0)
             {
@@ -65,6 +67,38 @@ namespace Ex42___rekursion
             {
                 return Fibonacci(value - 1) + Fibonacci(value - 2);
             }
+        }
+
+        /// <summary>
+        /// Calculates the fibonacci number for value, using memory
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static UInt64 FibonacciFast(long value)
+        {
+            if(value < 2)
+            {
+                if(value == 1)
+                {
+                    return 1;
+                }else if(value == 0)
+                {
+                    return 0;
+                } else
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+            }
+            UInt64 result = 1;
+            UInt64 result1 = 0;
+            UInt64 results2 = 1;
+            for (int i = 2; i <= value; i++)
+            {
+                result = result1 + results2;
+                result1 = results2;
+                results2 = result;
+            }
+            return result;
         }
     }
 }
