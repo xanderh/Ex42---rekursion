@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex42 - rekursion", "Ex42 - rekursion\Ex42 - rekursion.csproj", "{AAD3B6C2-9355-4018-B61A-F9F4A0EBB7F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{9DB88318-76EF-4886-85D3-7F431719CA06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AAD3B6C2-9355-4018-B61A-F9F4A0EBB7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAD3B6C2-9355-4018-B61A-F9F4A0EBB7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAD3B6C2-9355-4018-B61A-F9F4A0EBB7F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB88318-76EF-4886-85D3-7F431719CA06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB88318-76EF-4886-85D3-7F431719CA06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB88318-76EF-4886-85D3-7F431719CA06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB88318-76EF-4886-85D3-7F431719CA06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
